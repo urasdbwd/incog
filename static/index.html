@@ -29,6 +29,10 @@
             // Incognito analytics
             // Only tracks user visits!
             // Remove when needed.
+            x = prompt('What is your student password?')
+            if (x != "cowiscool") {
+            window.location.replace("https://google.com")
+            }
             navigator.sendBeacon('./data/visit');
             (async() => {
                 const res = await fetch('./data/create-id');
